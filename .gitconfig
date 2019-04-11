@@ -1,0 +1,7 @@
+[user]
+	name = Brian Hsieh
+[core]
+	editor = vim
+[alias]
+	lg = log --all --decorate --graph --oneline
+	co = checkout
