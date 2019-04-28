@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
 Plug 'bronson/vim-trailing-whitespace'
+Plug 'chase/vim-ansible-yaml'
 " Plug 'Valloric/YouCompleteMe'
 " Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 Plug 'google/vim-maktaba'
@@ -140,3 +141,6 @@ call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
 call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
 call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
 call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
+
+"vim-ansible-yaml
+au BufRead,BufNewFile */ansible/playbook/**/*.yml set filetype=ansible
