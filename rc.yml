@@ -1,8 +1,6 @@
 ---
 - name: Setting up environment
   hosts: localhost
-  become: yes
-  become_user: "{{ user | default('yahsieh') }}"
   tasks:
   - name: create dir
     file:
