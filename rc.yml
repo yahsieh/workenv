@@ -15,7 +15,7 @@
 
   - name: get vimrc
     get_url:
-      url: https://raw.githubusercontent.com/k4r1suma/workenv/master/.vimrc
+      url: https://raw.githubusercontent.com/yahsieh/workenv/master/.vimrc
       dest: /home/{{ user | default('yahsieh') }}/.vimrc
       mode: 0644
 
@@ -29,13 +29,13 @@
 
   - name: get gitconfig
     get_url:
-      url: https://raw.githubusercontent.com/k4r1suma/workenv/master/.gitconfig
+      url: https://raw.githubusercontent.com/yahsieh/workenv/master/.gitconfig
       dest: /home/{{ user | default('yahsieh') }}/.gitconfig
       mode: 0644
 
   - name: get tmux configs
     get_url:
-      url: https://raw.githubusercontent.com/k4r1suma/workenv/master/{{ item }}
+      url: https://raw.githubusercontent.com/yahsieh/workenv/master/{{ item }}
       dest: /home/{{ user | default('yahsieh') }}/
       mode: 0644
     with_items:
